@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="row">
+            <div class="col-1" style="border-right: 1px solid black; padding: 1%;">
+                <a href="categorypage.html">Shop</a>
+            </div>
+            <div class="col-1" style="border-right: 1px solid black ;padding: 1%;">
+                <a href="#">Contact</a>
+            </div>
+            <div class="col-8"></div>
+            <div class="col-1" style="border-left: 1px solid black;padding: 1%;">
+                <a href="signin.html">Sign in</a>
+            </div>
+            <div class="col-1" style="border-left: 1px solid black;padding: 1%;">
+                <a href="cart.html">Cart</a>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- step-1 contactinformation -->
+    <div class="row">
+        <div class="col-6" style="border: 1px solid gray;">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col -10">
+                    <!-- <div class="breadcrumb" style="margin-top: 40px;"> -->
+                    <div class="row">
+                        <div class="col-2"> <a href="#"> Information></a></div>
+                        <div class="col-2"> <a href="#"> SHIPPING></a></div>
+                        <div class="col-2"> <a href="#"> PAYMENT></a></div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="row">
+                <div id="product"></div>
+                <div class="col-2"></div>
+                <p class="col-8" style="background-color: gray; padding: 10px;">Already have an account?<a href="#"> Log
+                        in for faster
+                        checkout</a></p>
+                <div class="col-2"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+
+                    <section class="continfo">
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <p class="col-8">1 Contact information</p>
+                        </div>
+
+                        <div class="row" style="margin: 10px;">
+                            <div class="col-2"></div>
+                            <!-- <div class="col-8"> -->
+                            <input class="col-8" type="text" placeholder="Your Name">
+                            <!-- </div> -->
+                            <div class="col-2"></div>
+                        </div>
+                        <div class="row" style="margin: 10px;">
+                            <div class="col-2"></div>
+                            <input class="col-8" type="text" placeholder="Your Email">
+                            <div class="col-2"></div>
+
+                        </div>
+                        <div class="row" style="margin: 10px;">
+                            <div class="col-2"></div>
+                            <input class="col-8" type="text" placeholder="Your Phone number *">
+                            <div class="col-2"></div>
+
+                        </div>
+                        <div class="row" style="margin: 10px;">
+
+                            <div class="col-2"></div>
+                            <button class="col-8"><a href="shipping.html" style="text-decoration: none;color: black;">
+                                    Continue to
+                                    shipping</a></button>
+                            <div class="col-2"></div>
+
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <hr class="col-8" />
+                            <div class="col-2"></div>
+                        </div>
+
+                    </section>
+                    <div class="row" style="margin: 10px;">
+                        <div class="col-2"></div>
+                        <input class="col-8" type="text" placeholder="2 Shipping details" style="border: none;">
+                        <div class="col-2"></div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <hr class="col-8" />
+                            <div class="col-2"></div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin: 10px;">
+                        <div class="col-2"></div>
+                        <input class="col-8" type="text" placeholder="3 Payment" style="border: none;">
+                        <div class="col-2"></div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <hr class="col-8" />
+                            <div class="col-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- image -->
+        <div class="col-6" style="border: 1px solid gray;">
+
+
+            <div class="row">
+
+                <div class="col-6">
+                    <div id="cartroot"></div>
+                </div>
+
+
+                <p class="col-6">Order summary</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-2"></div>
+                <!-- <img src="flowerimg/snowfoll.png" class="col-4"> -->
+
+                <!-- <div class="col-4" style="margin-top: 80px;">snowfoll
+                    <p>Quantity (1)</p>
+                </div>
+                <p class="col-2" style="margin-top: 80px;">$100</p> -->
+
+            </div>
+
+            <div class="row" style="margin: 10px;">
+                <div class="col-2"></div>
+                <hr class="col-10" />
+                <div class="col-2"></div>
+            </div>
+            <div id="total"></div>
+            <div class="row">
+                <div class="col-2"></div>
+                <p class="col-10">If you have our gift card, enter the code to get discounts</p>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-4">
+
+                    <input type="text" placeholder="Gift card">
+                </div>
+                <div class="col-3" style="background-color: black;">
+
+                    <button style="border: none;background-color: transparent;color: white; ">Apply</button>
+                </div>
+
+                <div class="col-2"></div>
+            </div>
+
+
+            <div class="row" style="margin: 10px;">
+                <div class="col-2"></div>
+                <hr class="col-10" />
+                <div class="col-2"></div>
+            </div>
+
+
+            <!-- <div class="row">
+                <div class="col-2"></div>
+                <p class="col-8">Subtotal</p>
+                <p class="col-2">$100.00</p>
+            </div>
+
+            <div class="row">
+                <div class="col-2"></div>
+                <p class="col-6">Shipping</p>
+                <p class="col-4">Calculated at next step</p>
+            </div>
+            <div class="row" style="margin: 10px;">
+                <div class="col-2"></div>
+                <hr class="col-10" />
+                <div class="col-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <p class="col-8">Total</p>
+                <p class="col-2">$100.00</p>
+            </div> -->
+
+
+            <div class="row" style="margin-top:80px ;margin-bottom: 20px;">
+                <div class="col-5"></div>
+                <div class="col-7">Secure Checkout
+                    <i class="bi bi-lock"></i>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <footer>
+        <section>
+
+            <div class="row" style="border: 1px solid gray;">
+                <div class="col-3">
+
+                    <div class="f1">
+                        <p>
+                            Remember to offer beautiful flowers from luxeBouquets valenties Day Mothers
+                            Day,Christmas...
+                        <p>Reminds you 7 Days before . Nospam or share your address</p>
+                        </p>
+                        <div>
+                            <input type="text" placeholder="Your Email">
+                        </div>
+                        <div>
+                            <button>REMIND</button>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+                <div class="col-3">
+                    <div>
+                        <div>
+                            <h3>Contact Us</h3>
+                        </div>
+
+                        <div>
+                            <p>Phone</p>
+                            <p>+380980099777</p>
+                        </div>
+                        <div>General Enquiry</div>
+                        <p>Klev.flarist.stdio@gmail.com</p>
+                        <div>
+                            <p>Follow Us</p>
+                            <div class="row">
+                                <div class="col-1">
+                                    <i class="bi bi-instagram"></i>
+                                </div>
+                                <div class="col-1">
+
+                                </div>
+                                <div class="col-1">
+                                    <i class="bi bi-pinterest"></i>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class="col-1">
+                                    <i class="bi bi-facebook"></i>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class="col-1">
+                                    <i class="bi bi-twitter"></i>
+                                </div>
+                                <div class="col-1"></div>
+                                <div class="col-1">
+                                    <i class="bi bi-telegram"></i>
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <section>
+                        <div>
+                            <h3>Shop</h3>
+                            <p>All Products</p>
+                            <p>Fresh Flowers</p>
+                            <p>Dired Flowers</p>
+                            <p>Live Plants</p>
+                            <p>Designer Vases</p>
+                            <p>Aroma Candles</p>
+                            <p>Freshener Diffuser</p>
+                        </div>
+                        <div>
+                            <h3>Service</h3>
+                            <p> Flower Subcription</p>
+                            <p>Wedding & Event Decro</p>
+                        </div>
+                    </section>
+
+                </div>
+                <div class="col-3">
+                    <section>
+                        <div>
+                            <h2>About Us </h2>
+                            <p>Our Story</p>
+                            <p>Blog</p>
+                            <p>Shipping & returns</p>
+                            <p>Terms & Conditions</p>
+                            <p>privacy & policy</p>
+
+
+                        </div>
+                    </section>
+
+
+                </div>
+            </div>
+
+
+        </section>
+    </footer>
+    <script src="cart.js"></script>
+    <script>
+        function onLoad(event) {
+            createCart();
+        }
+        onLoad();
+    </script>
+
+
+
+</body>
+
+</html>

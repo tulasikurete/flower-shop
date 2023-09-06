@@ -1,0 +1,78 @@
+header {
+    border: 1px solid black;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.dry {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.f1 {
+    text-align: center;
+    height: 100%;
+    align-items: center;
+}
+
+.f1 div {
+    margin-bottom: 8px;
+}
+
+.text1 {
+    text-align: center;
+    padding: 100px 100px;
+}
+
+.col-3 {
+    border: 1px solid gray;
+
+}
+
+
+
+#counting {
+    border: 1px solid gray;
+    max-width: 100%;
+}
+
+#check-box {
+    margin-top: -14px;
+    width: auto;
+}
+
+.total {
+    display: flex;
+    gap: 450px
+}
+
+.itemdetail {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+
+.itemdetails {
+    margin-top: 20px;
+
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    margin-left: 200px;
+}
+
+.cpic {
+    width: 10%;
+}
